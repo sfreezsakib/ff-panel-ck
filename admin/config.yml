@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# আপনার ফোনের গ্যালারি থেকে আপলোড করা ছবি এখানে সেভ হবে
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "panels"
+    label: "FF Panels"
+    folder: "content/panels"
+    create: true
+    delete: true # ডিলিট করার অপশন
+    format: "json"
+    slug: "{{title}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Thumbnail Image", name: "thumbnail", widget: "image", choose_url: false}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Download Link", name: "download_link", widget: "string"}
