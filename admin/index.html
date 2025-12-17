@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakib Admin</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    /* মোবাইলে আপলোড উইন্ডো ঠিক করার ম্যাজিক CSS */
+    div[class*="MediaLibraryModal"] {
+      width: 100vw !important;
+      height: 100vh !important;
+      max-width: none !important;
+      margin: 0 !important;
+      top: 0 !important;
+    }
+    /* আপলোড বাটনটি যাতে সবার উপরে থাকে */
+    button[class*="UploadButton"] {
+      display: block !important;
+      background: #ef4444 !important;
+      color: white !important;
+      width: 100% !important;
+      padding: 15px !important;
+      font-weight: bold !important;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>
